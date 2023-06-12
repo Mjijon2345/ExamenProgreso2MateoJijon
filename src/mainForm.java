@@ -184,7 +184,7 @@ public class mainForm extends JFrame {
             }
         });
 
-        // Crear un modelo para el JComboBox
+       
         DefaultComboBoxModel<String> comboBoxModel = new DefaultComboBoxModel<>();
 
 

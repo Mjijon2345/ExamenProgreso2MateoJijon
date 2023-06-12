@@ -187,13 +187,13 @@ public class mainForm extends JFrame {
         // Crear un modelo para el JComboBox
         DefaultComboBoxModel<String> comboBoxModel = new DefaultComboBoxModel<>();
 
-// Agregar las opciones al modelo
+
         comboBoxModel.addElement("Nombre");
         comboBoxModel.addElement("Precio");
         comboBoxModel.addElement("Calorias");
         comboBoxModel.addElement("Tiempo de Preparacion");
 
-// Establecer el modelo en el JComboBox
+
         comboBoxOrder.setModel(comboBoxModel);
 
 
@@ -218,7 +218,7 @@ public class mainForm extends JFrame {
         });
     }
 
-    // Obtener un valor double válido o -1 si no es válido
+ 
     private double obtenerDoubleValido(String texto) {
         try {
             return Double.parseDouble(texto);
@@ -260,7 +260,7 @@ public class mainForm extends JFrame {
     }
 
 
-    // Obtener un valor entero válido o -1 si no es válido
+    
     private int obtenerEnteroValido(String texto) {
         try {
             return Integer.parseInt(texto);
@@ -269,7 +269,7 @@ public class mainForm extends JFrame {
         }
     }
 
-    // Actualizar el campo de texto textAIngresoPlatos con los platos del menú
+ 
     private void actualizarTextAIngresoPlatos() {
         textAIngresoPlatos.setText("");
         for (Plato plato : menu.getPlatos()) {
@@ -277,7 +277,7 @@ public class mainForm extends JFrame {
         }
     }
 
-    // Limpiar los campos de ingreso
+  
     private void limpiarCamposIngreso() {
         textIngresoNombre.setText("");
         textIngresoPrecio.setText("");
@@ -285,7 +285,7 @@ public class mainForm extends JFrame {
         textIngresoPreparacion.setText("");
     }
 
-    // Actualizar el campo de texto textAModif con el plato modificado
+
     private void actualizarTextAModif() {
         textAModif.setText("");
         String nombrePlato = textoModifNombre.getText();
@@ -304,7 +304,7 @@ public class mainForm extends JFrame {
         }
     }
 
-    // Método principal
+ 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Restaurante App");
         frame.setContentPane(new mainForm().mainPanel);

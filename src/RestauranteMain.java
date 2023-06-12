@@ -11,7 +11,7 @@ public class RestauranteMain {
                 mainForm principalForm = new mainForm();
                 principalForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 principalForm.setBounds(200,200,800,500);
-                principalForm.setContentPane(principalForm.getMainPanel());
+                principalForm.setContentPane(principalForm.getContentPane());
                 principalForm.setVisible(true);
             }
         });
